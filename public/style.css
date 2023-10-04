@@ -1,0 +1,134 @@
+
+.nav li{
+    padding: 0; 
+    margin: 0;
+
+}
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+li:hover{
+    color: rgb(8, 173, 240);
+
+}
+.NAV{
+    margin: -1px;
+margin-top: -30px;
+
+background-clip: none;}
+
+
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.product:hover{
+        /* box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.7),
+                    1px 2px 4px 0px rgba(8, 9, 9, 0.7),
+                    2px 4px 8px 0px rgba(0, 0, 0, 0.7),
+                    2px 4px 16px 0px rgba(32, 39, 42, 0.7); */
+                    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.product{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.center {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.table-shadow{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* 
+ul {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: rgb(255, 255, 255);
+} */
+
+.NAV li {
+
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: smaller;
+}
+
+.NAV li::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(8, 173, 240);
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.NAV li:hover:before {
+    transform: scaleX(1);
+    transition: 0.5s ease;
+
+}
+
+.NAV li::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(8, 173, 240);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right bottom;
+}
+
+.NAV li:hover:after {
+    transform: scaleX(1);
+    transition: 0.5s ease;
+}
+.bg-img{
+    background: url(https://images.pexels.com/photos/10037671/pexels-photo-10037671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blue {
+
+    color: rgb(8, 173, 240);
+    /* text-shadow:
+        0 0 8px rgb(8, 173, 240),
+        0 0 8px rgb(8, 173, 240),
+        0 0 121px rgb(8, 173, 240),
+        0 0 142px rgb(8, 173, 240),
+        0 0 500px rgb(8, 173, 240),
+        0 0 500px rgb(8, 173, 240),
+        0 0 500px rgb(8, 173, 240),
+        0 0 1511px rgb(8, 173, 240); */
+
+}
+
+.active {
+    color: rgb(8, 173, 240);
+}
+
+.active button {
+color: rgb(8, 173, 240);
+}
+
